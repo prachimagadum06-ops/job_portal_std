@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertex Jobs | Premium Career Platform</title>
+    <meta name="description" content="Discover premium job opportunities with a modern, fully responsive job portal experience." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-ring"></div>
+    </div>
+
+    <header class="navbar">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Vertex Jobs</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#companies">Companies</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Login</a>
+        <a href="#" class="register-link">Register</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Trusted by 50k+ professionals</p>
+          <h1>Find your next big opportunity.</h1>
+          <p>Explore premium roles at top companies, grow your career, and move forward with confidence.</p>
+
+          <form class="hero-search" id="heroSearch">
+            <input type="text" id="jobTitle" placeholder="Job title" />
+            <input type="text" id="jobLocation" placeholder="Location" />
+            <select id="jobCategory">
+              <option value="">Category</option>
+              <option value="design">Design</option>
+              <option value="engineering">Engineering</option>
+              <option value="marketing">Marketing</option>
+              <option value="finance">Finance</option>
+              <option value="product">Product</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Search Jobs</button>
+          </form>
+
+          <div class="hero-badges">
+            <span><i class="fa-solid fa-check"></i> Verified companies</span>
+            <span><i class="fa-solid fa-check"></i> Fast applications</span>
+            <span><i class="fa-solid fa-check"></i> Remote-first roles</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="jobs">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Opportunities</p>
+          <h2>Top jobs selected for you</h2>
+          <p>Search instantly across high-growth roles and hand-picked companies.</p>
+        </div>
+
+        <div class="search-bar reveal">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="jobSearchInput" placeholder="Search by job title, company, or location" />
+        </div>
+
+        <div class="jobs-grid">
+          <article class="job-card reveal" data-title="Senior Product Designer" data-company="Northstar Labs" data-location="Remote" data-category="design" data-type="Full Time" data-salary="$140k - $180k">
+            <div class="job-card-top">
+              <div class="company-logo">NL</div>
+              <div>
+                <h3>Senior Product Designer</h3>
+                <p>Northstar Labs</p>
+              </div>
+            </div>
+            <div class="job-details">
+              <span><i class="fa-solid fa-location-dot"></i> Remote</span>
+              <span><i class="fa-solid fa-dollar-sign"></i> $140k - $180k</span>
+              <span><i class="fa-solid fa-briefcase"></i> Full Time</span>
+            </div>
+            <div class="job-footer">
+              <span class="tag">Design</span>
+              <a href="#contact" class="btn btn-small">Apply</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-title="Frontend Engineer" data-company="Astra Cloud" data-location="New York" data-category="engineering" data-type="Hybrid" data-salary="$120k - $155k">
+            <div class="job-card-top">
+              <div class="company-logo">AC</div>
+              <div>
+                <h3>Frontend Engineer</h3>
+                <p>Astra Cloud</p>
+              </div>
+            </div>
+            <div class="job-details">
+              <span><i class="fa-solid fa-location-dot"></i> New York</span>
+              <span><i class="fa-solid fa-dollar-sign"></i> $120k - $155k</span>
+              <span><i class="fa-solid fa-briefcase"></i> Hybrid</span>
+            </div>
+            <div class="job-footer">
+              <span class="tag">Engineering</span>
+              <a href="#contact" class="btn btn-small">Apply</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-title="Growth Marketing Lead" data-company="Lumen AI" data-location="London" data-category="marketing" data-type="Contract" data-salary="$90k - $120k">
+            <div class="job-card-top">
+              <div class="company-logo">LA</div>
+              <div>
+                <h3>Growth Marketing Lead</h3>
+                <p>Lumen AI</p>
+              </div>
+            </div>
+            <div class="job-details">
+              <span><i class="fa-solid fa-location-dot"></i> London</span>
+              <span><i class="fa-solid fa-dollar-sign"></i> $90k - $120k</span>
+              <span><i class="fa-solid fa-briefcase"></i> Contract</span>
+            </div>
+            <div class="job-footer">
+              <span class="tag">Marketing</span>
+              <a href="#contact" class="btn btn-small">Apply</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-title="Financial Analyst" data-company="Crest Capital" data-location="Chicago" data-category="finance" data-type="Full Time" data-salary="$95k - $115k">
+            <div class="job-card-top">
+              <div class="company-logo">CC</div>
+              <div>
+                <h3>Financial Analyst</h3>
+                <p>Crest Capital</p>
+              </div>
+            </div>
+            <div class="job-details">
+              <span><i class="fa-solid fa-location-dot"></i> Chicago</span>
+              <span><i class="fa-solid fa-dollar-sign"></i> $95k - $115k</span>
+              <span><i class="fa-solid fa-briefcase"></i> Full Time</span>
+            </div>
+            <div class="job-footer">
+              <span class="tag">Finance</span>
+              <a href="#contact" class="btn btn-small">Apply</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section companies-section" id="companies">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Top Employers</p>
+          <h2>Trusted by ambitious teams everywhere</h2>
+        </div>
+        <div class="companies-grid">
+          <div class="company-card reveal"><h3>Google</h3><p>Engineering</p></div>
+          <div class="company-card reveal"><h3>Microsoft</h3><p>Product</p></div>
+          <div class="company-card reveal"><h3>Stripe</h3><p>Finance</p></div>
+          <div class="company-card reveal"><h3>Notion</h3><p>Design</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Popular Categories</p>
+          <h2>Choose the path that matches your expertise</h2>
+        </div>
+        <div class="categories-grid">
+          <div class="category-card reveal"><i class="fa-solid fa-code"></i><h3>Engineering</h3><p>1,200+ openings</p></div>
+          <div class="category-card reveal"><i class="fa-solid fa-palette"></i><h3>Design</h3><p>780+ openings</p></div>
+          <div class="category-card reveal"><i class="fa-solid fa-chart-line"></i><h3>Marketing</h3><p>640+ openings</p></div>
+          <div class="category-card reveal"><i class="fa-solid fa-coins"></i><h3>Finance</h3><p>520+ openings</p></div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="about-card reveal">
+          <div>
+            <p class="eyebrow">Career Growth</p>
+            <h2>Everything you need to accelerate your professional journey</h2>
+            <p>From curated opportunities to actionable career tips, Vertex Jobs helps you stand out in a competitive market.</p>
+          </div>
+          <div class="tips-list">
+            <div><i class="fa-solid fa-lightbulb"></i><span>Tailor your resume to each role.</span></div>
+            <div><i class="fa-solid fa-network-wired"></i><span>Build your professional network.</span></div>
+            <div><i class="fa-solid fa-chart-simple"></i><span>Track applications and interviews smartly.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats-section">
+        <div class="stat-card reveal">
+          <div class="counter" data-target="50000">0</div>
+          <p>Active Professionals</p>
+        </div>
+        <div class="stat-card reveal">
+          <div class="counter" data-target="3200">0</div>
+          <p>Partner Companies</p>
+        </div>
+        <div class="stat-card reveal">
+          <div class="counter" data-target="98">0</div>
+          <p>Success Rate %</p>
+        </div>
+        <div class="stat-card reveal">
+          <div class="counter" data-target="24">0</div>
+          <p>Hours to Response</p>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Success Stories</p>
+          <h2>What job seekers are saying</h2>
+        </div>
+        <div class="testimonial-carousel reveal">
+          <button class="carousel-btn prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="testimonial-track">
+            <article class="testimonial active">
+              <p>“Vertex Jobs helped me land my dream role in just two weeks. The experience felt premium and personal.”</p>
+              <h3>Amira Cho</h3>
+              <span>Product Designer</span>
+            </article>
+            <article class="testimonial">
+              <p>“The filters and curated listings made my search efficient and enjoyable.”</p>
+              <h3>Daniel Ortiz</h3>
+              <span>Software Engineer</span>
+            </article>
+            <article class="testimonial">
+              <p>“I found a fantastic remote opportunity with a globally recognized company.”</p>
+              <h3>Priya Shah</h3>
+              <span>Marketing Lead</span>
+            </article>
+          </div>
+          <button class="carousel-btn next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Frequently Asked Questions</p>
+          <h2>Everything you need to know</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question">Is registration free?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Yes, creating an account and browsing opportunities is completely free.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">Can I apply to multiple jobs?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Absolutely. You can track applications and manage everything from your dashboard.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">Do you support remote positions?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Yes, many of our listings include remote, hybrid, and on-site opportunities.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter-section reveal">
+        <div class="newsletter-card">
+          <div>
+            <p class="eyebrow">Stay ahead</p>
+            <h2>Subscribe for curated job alerts</h2>
+          </div>
+          <form id="newsletterForm" class="newsletter-form" novalidate>
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-message" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-card reveal">
+          <div>
+            <p class="eyebrow">Talk to us</p>
+            <h2>Ready to take the next step?</h2>
+            <p>Share your goals and we’ll help you match with the right opportunities.</p>
+          </div>
+          <form id="contactForm" novalidate>
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" rows="4" placeholder="Tell us about your career goals" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a href="#home" class="logo footer-logo">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Vertex Jobs</span>
+        </a>
+        <p>Modern opportunities for modern professionals.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#jobs">Jobs</a>
+        <a href="#companies">Companies</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <p><i class="fa-solid fa-envelope"></i> hello@vertexjobs.com</p>
+        <p><i class="fa-solid fa-phone"></i> +1 800 555 0199</p>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
